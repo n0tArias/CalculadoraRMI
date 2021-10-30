@@ -149,7 +149,6 @@ public class Cliente extends javax.swing.JFrame {
         btnSumar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnSumar.setForeground(new java.awt.Color(255, 255, 255));
         btnSumar.setText("+");
-        btnSumar.setPreferredSize(new java.awt.Dimension(41, 25));
         btnSumar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumarActionPerformed(evt);
@@ -212,7 +211,6 @@ public class Cliente extends javax.swing.JFrame {
 
         txtNumero1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtNumero1.setForeground(new java.awt.Color(36, 65, 135));
-        txtNumero1.setText("Inserta un número");
         txtNumero1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNumero1ActionPerformed(evt);
@@ -221,7 +219,6 @@ public class Cliente extends javax.swing.JFrame {
 
         txtNumero2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtNumero2.setForeground(new java.awt.Color(36, 65, 135));
-        txtNumero2.setText("Inserta un número");
         txtNumero2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNumero2ActionPerformed(evt);
@@ -280,7 +277,7 @@ public class Cliente extends javax.swing.JFrame {
                                 .addGap(4, 4, 4)
                                 .addComponent(txtNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(33, 33, 33)
-                                .addComponent(btnSumar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnSumar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnRestar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -299,7 +296,7 @@ public class Cliente extends javax.swing.JFrame {
                         .addGap(5, 5, 5)
                         .addComponent(jLabel3))
                     .addComponent(txtNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSumar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSumar)
                     .addComponent(btnRestar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(5, 5, 5)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,7 +355,7 @@ public class Cliente extends javax.swing.JFrame {
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtNumero1.setText(" ");
         txtNumero2.setText(" ");
-        txtResultado.setText(" ");
+        txtResultado.setText("Resultado");
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     /**
